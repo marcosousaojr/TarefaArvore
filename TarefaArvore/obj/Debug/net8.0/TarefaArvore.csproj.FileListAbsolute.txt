@@ -1,0 +1,14 @@
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.AssemblyInfoInputs.cache
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.AssemblyInfo.cs
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.csproj.CoreCompileInputs.cache
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\bin\Debug\net8.0\TarefaArvore.exe
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\bin\Debug\net8.0\TarefaArvore.deps.json
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\bin\Debug\net8.0\TarefaArvore.runtimeconfig.json
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\bin\Debug\net8.0\TarefaArvore.dll
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\bin\Debug\net8.0\TarefaArvore.pdb
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.dll
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\refint\TarefaArvore.dll
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.pdb
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\TarefaArvore.genruntimeconfig.cache
+D:\Arquivos\Programas\TarefaArvore\TarefaArvore\obj\Debug\net8.0\ref\TarefaArvore.dll
