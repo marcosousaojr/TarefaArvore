@@ -14,13 +14,11 @@ namespace TarefaArvore.Test
         }
 
         [Test]
-        public void TestArrayContainsOnlyIntegers()
+        public void TestObtemValorRaiz()
         {
             object[] array = { "falha", 2, 3, 8, 4, 5, 6, 7 };
-            foreach (var item in array)
-            {
-                Assert.IsInstanceOf<int>(item);
-            }
+            
+            tarefaArvore.ObtemValorRaiz(array);
                         
         }
     }

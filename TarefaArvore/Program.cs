@@ -3,7 +3,8 @@
 using TarefaArvore.Model;
 
 Init();
-
+try
+{
 void Init()
 {
     Arvore arvore = new Arvore();
@@ -47,4 +48,17 @@ void ImprimirArray(List<int> lista)
     Console.ReadKey();
     Console.Clear();
     Init();
+}
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Erro: " + ex.Message);
+    Console.ReadKey();
+    Console.Clear();
+    Init();
+}
+finally
+{
+    Console.WriteLine("Fim do programa");
+    Console.ReadKey();
 }
