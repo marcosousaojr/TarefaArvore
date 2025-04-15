@@ -9,6 +9,6 @@ COPY . .
 
 RUN dotnet build
 
-# RUN dotnet test
+RUN dotnet test
 
 ENTRYPOINT ["dotnet", "run", "sleep 300"]

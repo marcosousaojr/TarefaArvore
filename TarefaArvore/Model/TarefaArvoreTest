@@ -1,0 +1,25 @@
+using NUnit.Framework;
+using TarefaArvore.Model;
+
+namespace TarefaArvore.Test
+{
+    [TestFixture]
+    public class TarefaArvoreTest
+    {
+        private TarefaArvore tarefaArvore;
+        private List<int> listaTarefas = new List<int> { 1, 2, 3, 8, 4, 5, 6, 7 };
+
+        [SetUp]
+        public void Setup()
+        {
+            tarefaArvore = new TarefaArvore();
+        }
+
+        [Test]
+        public void TestArrayContainsOnlyIntegers()
+        {
+            foreach (var item in listaTarefas)
+            {
+                Assert.IsInstanceOf<int>(item);
+            }
+        }
