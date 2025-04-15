@@ -6,7 +6,7 @@ namespace TarefaArvore.Test
     public class TarefaArvoreTest
     {
         private TarefaArvore tarefaArvore;
-        private List<int> listaTarefas = new List<int> { 1, 2, 3, 8, 4, 5, 6, 7 };
+        private object[] array = { "falha", 2, 3, 8, 4, 5, 6, 7 };
 
         [SetUp]
         public void Setup()
@@ -17,7 +17,7 @@ namespace TarefaArvore.Test
         [Test]
         public void TestArrayContainsOnlyIntegers()
         {
-            foreach (var item in listaTarefas)
+            foreach (var item in array)
             {
                 Assert.IsInstanceOf<int>(item);
             }
