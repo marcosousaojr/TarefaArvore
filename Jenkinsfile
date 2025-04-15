@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     /* Push image using withRegistry. */
-                    docker.withRegistry('https://registry.hub.docker.com/', 'dockerhub') {
+                    docker.withRegistry('https://registry.hub.docker.com/', 'DockerHub') {
                         app.push("${env.BUILD_ID}")
                         app.push('latest')
                     }

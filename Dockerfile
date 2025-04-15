@@ -1,22 +1,14 @@
-# Etapa 1: Construir a aplicação
+# Etapa 1: Build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
 
-# Copiar csproj e restaurar dependências
-COPY *.csproj ./
-RUN dotnet restore
+# Define o diretório de trabalho
+WORKDIR /src
 
-# Copiar o restante dos arquivos e construir a aplicação
-COPY . ./
-RUN dotnet publish -c Release -o out
+# Copia o arquivo de projeto e restaura as dependências
+COPY . .
 
-# Etapa 2: Criar a imagem final
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
-WORKDIR /app
-COPY --from=build /app/out .
+RUN dotnet build
 
-# Expor a porta que a aplicação usará
-EXPOSE 80
+# RUN dotnet test
 
-# Comando para rodar a aplicação
-ENTRYPOINT ["dotnet", "TarefaArvore.dll"]
+ENTRYPOINT ["dotnet", "run", "sleep 300"]
