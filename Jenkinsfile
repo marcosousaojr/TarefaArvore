@@ -8,10 +8,10 @@ pipeline {
     }
 
     stages {
-        stage('Build, testando e empacotando') {
+        stage('Build e empacotando') {
             steps {
                 script {
-                    echo "Compilando, testando e empacotando a aplicação..."                    
+                    echo "Compilando e empacotando a aplicação..."                    
                     app = docker.build("${env.IMAGE_NAME}:${env.BRANCH_NAME}-${env.BUILD_ID}", '.')
                 }
             }
@@ -26,14 +26,13 @@ pipeline {
                         app.push('latest')
                     }
                 }
-            
             }
         }
 
         stage('Deploy') {
             steps {
                 script {
-                    echo "🚀 Realizando o deploy..."
+                    echo "Realizando o deploy..."
 
                     // Força parar o container antigo se ele existir
                     try {
