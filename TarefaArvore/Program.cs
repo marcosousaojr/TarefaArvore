@@ -1,8 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using TarefaArvore.Model;
-try
-{
+
 Init();
 
 void Init()
@@ -48,17 +47,4 @@ void ImprimirArray(List<int> lista)
     Console.ReadKey();
     Console.Clear();
     Init();
-}
-}
-catch (Exception ex)
-{
-    Console.WriteLine("Erro: " + ex.Message);
-    Console.ReadKey();
-    Console.Clear();
-    Init();
-}
-finally
-{
-    Console.WriteLine("Fim do programa");
-    Console.ReadKey();
 }
