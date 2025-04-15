@@ -16,7 +16,7 @@ namespace TarefaArvore.Test
         [Test]
         public void TestObtemValorRaiz()
         {
-            object[] array = { 1, 2, 3, 8, 4, 5, 6, 7 };
+            List<int> array = { 1, 2, 3, 8, 4, 5, 6, 7 };
             
             tarefaArvore.ObtemValorRaiz(array);
                         
